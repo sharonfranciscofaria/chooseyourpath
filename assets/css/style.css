@@ -61,6 +61,16 @@ nav {
   padding: 50px;
 }
 
+/* Brand logo */
+.brand {
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+
 /* Icons on the right */
 .icons {
     display: flex;
