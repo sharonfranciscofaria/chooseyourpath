@@ -24,50 +24,69 @@
         <div class="icons">
             <a href="index.html"> <button class="home-button">🏠</button> </a>
             <button class="sound-button">🔊</button>
+            <script>
+                const button = document.querySelector(".sound-button");
+                const audio = new Audio("assets/audio/audio.mp3");
+                audio.loop = true;
+                let isPlaying = false;
+
+                button.addEventListener("click", togglePlay);
+
+                function togglePlay() {
+                    if (isPlaying) {
+                        audio.pause();
+                        button.classList.remove("play");
+                    } else {
+                        audio.play();
+                        button.classList.add("play");
+                    }
+                    isPlaying = !isPlaying;
+                }
+            </script>
         </div>
     </nav>
 
     <!-- Video Background -->
-  <div class="video-container">
-    <video autoplay muted loop>
-      <source src="assets/video/video-bg.mp4" type="video/mp4">
-    </video>
-  </div>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/video/video-bg.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <!-- Main body section -->
-  <div class=" story overlay">
-    <img hidden id="picture" src="./assets/images/end.svg" alt="hero-image">
-    <h1 id="title">Are you ready to choose your path?</h1>
-    <h2 id="context">
-      You get to decide which path the character will take as it tries to navigate <br>
-      the gap between the natural and technological worlds.<br><br>
-      Along the road, there will be many obstacles to overcome,<br>
-      and the path you take will depend on the decisions you make.
-    </h2>
-    <br><br>
-    <div class="button-container">
-      <button id="button1" class="visible">Begin!</button>
-      <button id="button2" class="hidden">Next</button>
-      <button id="button3" class="hidden">Next</button>
+    <div class=" story overlay">
+        <img hidden id="picture" src="./assets/images/end.svg" alt="hero-image">
+        <h1 id="title">Are you ready to choose your path?</h1>
+        <h2 id="context">
+            You get to decide which path the character will take as it tries to navigate <br>
+            the gap between the natural and technological worlds.<br><br>
+            Along the road, there will be many obstacles to overcome,<br>
+            and the path you take will depend on the decisions you make.
+        </h2>
+        <br><br>
+        <div class="button-container">
+            <button id="button1" class="visible">Begin!</button>
+            <button id="button2" class="hidden">Next</button>
+            <button id="button3" class="hidden">Next</button>
+        </div>
     </div>
-  </div>
-  
-  <!-- Footer -->
-  <footer class="footer-container">
-    <p>Game created by © Sharon Francisco Faria</p>
-    <div class="social-media">
-      <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/yourpage" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.youtube.com/user/yourpage" target="_blank"><i class="fa fa-youtube"></i></a>
-      <a href="https://www.pinterest.co.uk/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-      <a href="https://github.com/sharonfranciscofaria" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
-  </footer>
 
-  
-  <script src="https://kit.fontawesome.com/8622588ebf.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
+    <!-- Footer -->
+    <footer class="footer-container">
+        <p>Game created by © Sharon Francisco Faria</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/yourpage" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/yourpage" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.pinterest.co.uk/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://github.com/sharonfranciscofaria" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/8622588ebf.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
