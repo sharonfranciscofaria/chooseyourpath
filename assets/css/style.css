@@ -60,3 +60,19 @@ nav {
   height: 80px;
   padding: 50px;
 }
+
+/* Icons on the right */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    border: none;
+  
+  }
+  
+  
+  .sound-button,
+  .home-button {
+    font-size: large;
+    cursor: pointer;
+  }
