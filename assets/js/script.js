@@ -147,3 +147,67 @@ const scenes = {
         { text: 'Restart', destination: 'start' },
       ]
     },
+    // Paddingtons endings
+
+'end1': {
+    title: 'Poison!',
+    context: 'Sorry you ate some poisonous berries and got sick. You tried to call the A&E but could not get any network. The end.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'food' },
+    ]
+  },
+  
+  'end2': {
+    title: 'Unfiltered Water!',
+    context: 'Sorry you drank unfiltered water and got sick. You tried to call the A&E but could not get any network. The end.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'water' },
+    ]
+  },
+  
+  'end3': {
+    title: 'Poison!',
+    context: 'Sorry you drank some poisonous berries and got sick. You tried to call the A&E but could not get any network. The end.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'water' },
+    ]
+  },
+  
+  'end4': {
+    title: 'The tree falls on you!',
+    context: 'You have no skills cutting down a tree and so instead of cutting it away from you, you cut it towards you. plus, cutting down trees leads to climate change, soil erosion, desertification, fewer crops, floods, more greenhouse gases in the air, and numerous issues.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'fish' },
+    ]
+  },
+  
+  'end5': {
+    title: 'Fire!',
+    context: 'You start up a fire in the woods and you are unable to control it. The end.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'fish' },
+    ]
+  },
+  
+  'end6': {
+    title: 'Hunt to be hunted!',
+    context: 'You have no skills hunting, instead those wild animals attacked you and you got hurt. Plus, Hunting can lead to the loss of biodiversity, disturbance to ecosystems, and the depletion of populations of certain species.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'onemonth' },
+    ]
+  },
+  
+  'end7': {
+    title: 'Hunted',
+    context: 'While bears can be accustomed to humans through training, they cannot be entirely domesticated. These solitary animals demand an extensive amount of food and will hunt when in need.',
+    image: 'end.svg',
+    choices: [
+      { text: 'Go back', destination: 'danger' },
+    ]
+  },
