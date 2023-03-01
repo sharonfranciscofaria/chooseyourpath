@@ -33,9 +33,6 @@ Nature or Tech" is an interactive choose-your-own-journey narrative game that ce
     * [Audio](#audio) 
     * [Background Video](#background-video)
   * [Desktop, Tablet & Mobile Testings](#desktop-desktop--mobile-testing)
-    * [Desktop](#desktop-preview) 
-    * [Tablet](#tablet-preview)
-    * [Mobile](#Mobile-preview) 
   * [Future Features](#future-features)
   * [Technologies Used](#technologies-used)
   * [Deployment](#deployment)
@@ -235,15 +232,6 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 This website was designed to be usable and readable on all screen sizes.
 ![Responsive](assets/images/responsive.PNG)
 
-
-### **Desktop**  
-
- 
-### **Tablet**
-
-
-### **Mobile**
-
 --- 
 
 ## Future Features  
@@ -334,13 +322,6 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 
 ![Lighthouse](assets/images/audit.PNG) 
   
-### **Testing**    
-
-Testing took place throughout the entire build using Dev Tools on Chrome and on the above real-world devices. The browsers used were:  
-- Chrome  
-- Opera  
-- Edge  
-   
 ### **HTML Validation using W3C Validation** 
 
 ![screenshot of CSS validation](assets/images/HTML.PNG)
@@ -348,6 +329,8 @@ Testing took place throughout the entire build using Dev Tools on Chrome and on 
 ### **CSS Validation using W3C Validation** 
 
 ![screenshot of CSS validation](assets/images/CSS.PNG)
+
+### **Javascript Validation using JSHint** 
 
    
 ### **Bugs & Fixes**  

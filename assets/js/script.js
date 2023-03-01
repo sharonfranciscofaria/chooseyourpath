@@ -1,26 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const titleElement = document.querySelector('#title');
-    const contextElement = document.querySelector('#context');
-    const imageElement = document.querySelector('#picture');
-    const button1 = document.querySelector('#button1');
-    const button2 = document.querySelector('#button2');
-    const button3 = document.querySelector('#button3');
-    button1.addEventListener('click', updateStory);
-  
-    var currentStage = 'farewell';
-  
-    function updateStory() {
-      titleElement.innerHTML = scenes[currentStage].title;
-      contextElement.innerHTML = scenes[currentStage].context;
-      imageElement.innerHTML = '<img src="assets/images/' + scenes[currentStage].image + '">';
-      button1.innerHTML = scenes[currentStage].choices[0].choice;
-      button2.innerHTML = scenes[currentStage].choices[1].choice;
-      button3.innerHTML = scenes[currentStage].choices[2].choice;
-    }
-  });
-  
-
-
 
 // Scenes of the story are stored in this central data structure
 // it has the following design:
@@ -36,7 +13,7 @@ const scenes = {
         title: 'Are you ready to choose your path?',
         context: 'You get to decide which path the character will take as it tries to navigate the gap between the natural and technological worlds. Along the road, there will be many obstacles to overcome, and the path you take will depend on the decisions you make.',
         choices: [{
-            choice: 'Begin!',
+            text: 'Begin!',
             destination: 'farewell'
         }, ]
     },
@@ -47,11 +24,11 @@ const scenes = {
         context: 'Marshmallow decided to pursue his career in a prestigious tech company in the city, while Paddington happily embarked on his adventure in the forest with minimal supplies and no work responsibilities. Despite their bittersweet farewell, both friends embraced their chosen paths.',
         image: 'farewell.svg',
         choices: [{
-                choice: 'Join Paddington',
+                text: 'Join Paddington',
                 destination: 'woods'
             },
             {
-                choice: 'Join Marshmallow',
+                text: 'Join Marshmallow',
                 destination: 'city'
             },
         ]
@@ -62,7 +39,7 @@ const scenes = {
         context: 'As Paddington immersed himself in the sights and sounds of nature, he lost track of time until he realised it was getting late, and he was left thirsty and hungry with no more water  or food left.',
         image: 'woods.svg',
         choices: [{
-                choice: 'Try to find shelter',
+                text: 'Try to find shelter',
                 destination: 'shelter'
             },
             {
@@ -435,3 +412,66 @@ const scenes = {
         }, ]
     },
 }
+
+const button1 = document.querySelector('#button1');
+const button2 = document.querySelector('#button2');
+const button3 = document.querySelector('#button3');
+const picture = document.querySelector('#picture');
+const title = document.querySelector('#title');
+const context = document.querySelector('#context');
+
+  button1.addEventListener('click', () => {
+  button1.textContent = 'Join Paddington : oods';
+  button1.dataset.destination = 'woods';
+  button2.textContent = 'Join Marshmallow: City';
+  button2.classList.remove('hidden');
+  button2.dataset.destination = 'city';
+  button3.classList.add('hidden');
+
+  picture.src = './assets/images/farewell.svg';
+  title.textContent = 'Farewell my friend';
+  context.textContent = 'Marshmallow and Paddington have been best friends since childhood. After finishing their studies, they are faced with a choice: follow their passion in the tech industry or explore the natural world.';
+});
+
+button2.addEventListener('click', () => {
+  const destination = button2.dataset.destination;
+
+  // Load the content of the next scene
+  picture.src = `./assets/images/${scenes[destination].image}`;
+  title.textContent = scenes[destination].title;
+  context.textContent = scenes[destination].context;
+
+  // Change the text and destination of the buttons for the next scene
+  button1.textContent = scenes[destination].choices[0].text;
+  button1.dataset.destination = scenes[destination].choices[0].destination;
+  button2.textContent = scenes[destination].choices[1].text;
+  button2.dataset.destination = scenes[destination].choices[1].destination;
+  if (scenes[destination].choices.length > 2) {
+    button3.classList.remove('hidden');
+    button3.textContent = scenes[destination].choices[2].text;
+    button3.dataset.destination = scenes[destination].choices[2].destination;
+  } else {
+    button3.classList.add('hidden');
+  }
+});
+
+button3.addEventListener('click', () => {
+  const destination = button3.dataset.destination;
+
+  // Load the content of the next scene
+  picture.src = `./assets/images/${scenes[destination].image}`;
+  title.textContent = scenes[destination].title;
+  context.textContent = scenes[destination].context;
+
+  // Change the text and destination of the buttons for the next scene
+  button1.textContent = scenes[destination].choices[0].text;
+  button1.dataset.destination = scenes[destination].choices[0].destination;
+  button2.textContent = scenes[destination].choices[1].text;
+  button2.dataset.destination = scenes[destination].choices[1].destination;
+  if (scenes[destination].choices.length > 2) {
+    button3.textContent = scenes[destination].choices[2].text;
+    button3.dataset.destination = scenes[destination].choices[2].destination;
+  } else {
+    button3.classList.add('hidden');
+  }
+});
