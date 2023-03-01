@@ -5,8 +5,7 @@
 Nature or Tech" is an interactive choose-your-own-journey narrative game that centers around the idea of having to choose between nature and technology in our daily lives. The game features two distinct story paths that players can choose from, each with its own character and unique storyline.
 <br>  
 
-  
-![Main image](assets/images/responsive.PNG)
+![Homepage](assets/images/homepage.PNG) 
 
 ---
 
@@ -233,8 +232,9 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 --- 
 
 ## Desktop, Tablet & Mobile Preview
+This website was designed to be usable and readable on all screen sizes.
+![Responsive](assets/images/responsive.PNG)
 
-![Responsive](assets/images/homepage.PNG) 
 
 ### **Desktop**  
 
@@ -332,7 +332,7 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
     
 ## Audits 
 
-This website was designed to be usable and readable on all screen sizes.
+![Lighthouse](assets/images/audit.PNG) 
   
 ### **Testing**    
 

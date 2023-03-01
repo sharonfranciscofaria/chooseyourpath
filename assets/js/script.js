@@ -1,21 +1,34 @@
-const titleElement = document.querySelector('#title');
-const contextElement = document.querySelector('#context');
-const imageElement = document.querySelector('#picture');
-const button1 = document.querySelector('#button1');
-const button2 = document.querySelector('#button2');
-const button3 = document.querySelector('#button3');
+document.addEventListener('DOMContentLoaded', function() {
+    const titleElement = document.querySelector('#title');
+    const contextElement = document.querySelector('#context');
+    const imageElement = document.querySelector('#picture');
+    const button1 = document.querySelector('#button1');
+    const button2 = document.querySelector('#button2');
+    const button3 = document.querySelector('#button3');
+    button1.addEventListener('click', updateStory);
+  
+    var currentStage = 'farewell';
+  
+    function updateStory() {
+      titleElement.innerHTML = scenes[currentStage].title;
+      contextElement.innerHTML = scenes[currentStage].context;
+      imageElement.innerHTML = '<img src="assets/images/' + scenes[currentStage].image + '">';
+      button1.innerHTML = scenes[currentStage].choices[0].choice;
+      button2.innerHTML = scenes[currentStage].choices[1].choice;
+      button3.innerHTML = scenes[currentStage].choices[2].choice;
+    }
+  });
+  
 
 
-// Event listener
-button1.addEventListener("click", updateStory);
-var currentStage = 'farewell';
 
-function updateStory() {
-    titleElement.innerHTML = scenes[currentStage].title;
-    contextElement.innerHTML = scenes[currentStage].context;
-    imageElement.innerHTML = '`<img src=\'./assets/images/${scenes[currentStage].image}\'>`';
+// Scenes of the story are stored in this central data structure
+// it has the following design:
 
-}
+// dictionary for which each key is the name of a scene, and each value is an object which contains three fields: title, context, and choices
+// choices is itself a list of objects, where each object is a label for a button and the scene to jump to when that button is pressed
+
+
 
 // The scenes and choices
 const scenes = {
@@ -23,7 +36,7 @@ const scenes = {
         title: 'Are you ready to choose your path?',
         context: 'You get to decide which path the character will take as it tries to navigate the gap between the natural and technological worlds. Along the road, there will be many obstacles to overcome, and the path you take will depend on the decisions you make.',
         choices: [{
-            text: 'Begin!',
+            choice: 'Begin!',
             destination: 'farewell'
         }, ]
     },
@@ -34,11 +47,11 @@ const scenes = {
         context: 'Marshmallow decided to pursue his career in a prestigious tech company in the city, while Paddington happily embarked on his adventure in the forest with minimal supplies and no work responsibilities. Despite their bittersweet farewell, both friends embraced their chosen paths.',
         image: 'farewell.svg',
         choices: [{
-                text: 'Join Paddington',
+                choice: 'Join Paddington',
                 destination: 'woods'
             },
             {
-                text: 'Join Marshmallow',
+                choice: 'Join Marshmallow',
                 destination: 'city'
             },
         ]
@@ -49,7 +62,7 @@ const scenes = {
         context: 'As Paddington immersed himself in the sights and sounds of nature, he lost track of time until he realised it was getting late, and he was left thirsty and hungry with no more water  or food left.',
         image: 'woods.svg',
         choices: [{
-                text: 'Try to find shelter',
+                choice: 'Try to find shelter',
                 destination: 'shelter'
             },
             {
