@@ -156,3 +156,69 @@ Through mind mapping, I was able to create a world-building framework for both p
 ![Worldbuilding](assets/images/worldbuilding.png)
 
 --- 
+
+## Wireframes
+
+Using Figma, I crafted the wireframes both desktop and mobile. Initially, I was unaware that the background would be in video format. however, the design helped me in envisioning the page's appearance, enabling me to experiment with various text fonts, sizes, and weights. This allowed me to style in CSS with ease after visualizing its look and feel.
+
+### **Desktop**  
+
+![Wireframe](assets/images/wireframe.PNG)
+
+### **Mobile**
+
+![Wireframe Mobile](assets/images/wireframe-mobile.PNG)
+
+--- 
+
+## Design & Media
+
+### **Brand**  
+
+I have chosen to go ahead with a text logo for the following reasons: 
+
+1. Flexibility: Text logos are generally more flexible than image-based logos since they can be easily scaled up or down and used in a variety of contexts.
+
+2. Simplicity: Text logos are often simpler and more straightforward than image-based logos, which can make them more memorable and easier to recognize. They can also be more versatile, allowing for variations in font, color, and style.
+
+3. Clarity: Text logos can be more clear and legible than image-based logos, particularly when the logo needs to be displayed at a small size or in a low-resolution format. This can ensure that the logo is always visible and recognizable, even in challenging circumstances.
+
+
+### **Colour Palette**
+
+Despite using a video for the background, I primarily centered the color palette around blue since it is associated with both nature and technology. White was chosen for the text to ensure readability, as black would have been difficult to see against the video. The colours shown below are an approximate blend of the hues present in the video.
+<br>
+[Palette Link](https://coolors.co/000000-13102d-1e5c7e-2596be-3ec2d1-c0c4c2-ffffff) 
+![colour](assets/images/palette.svg) 
+
+ 
+
+### **Typography**
+
+I used Google Fonts for my website, taking advantage of its vast library of 1,493 open source font families. Here are the chosen fonts for this project: 
+
+![VT323](assets/images/vt323.PNG)
+
+1. [VT323, by Peter Hull](https://fonts.google.com/specimen/VT323) was used due its legibility, retro style, and ease of use.
+
+![Quciksand](assets/images/Quicksand.PNG)
+
+2. [Quicksand, Designed by Andrew Paglinawan](https://fonts.google.com/specimen/Quicksand) was used due it's modern and friendly appearance, making it suitable for a wide range of audience. It is also highly legible, making it easy for players to read instructions and text within the game.
+
+### **Artwork & Video**
+As a Canva Pro user, I was able to access a wide variety of additional features and resources, including a vast library of licensed images, videos graphics, and templates that could be used without infringing on copyright laws. Drawing on my photography and design skills, I used these resources to create unique and visually striking artwork for this project. Whereas the video I used was included within Canva's library. 
+
+![Woods Art](assets/images/woods-art.PNG)
+
+<br> 
+
+![City Art](assets/images/city-art.PNG)
+
+### **Audio**
+![Lexin Music by Aleksey Chistilin](assets/images/pixabay.PNG)
+<br>
+For this game, I used Pixabay to discover an audio that is free of copyright. I believed that incorporating this would serve as an excellent interactive feature to elevate the overall experience of the player. 
+<br>
+[Lexin Music by Aleksey Chistilin](https://pixabay.com/music/beautiful-plays-spirit-landscape-118015/) 
+
+--- 
