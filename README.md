@@ -6,7 +6,7 @@ Nature or Tech" is an interactive choose-your-own-journey narrative game that ce
 <br>  
 
   
-![Main image](assets/images/main.svg)
+![Main image](assets/images/responsive.PNG)
 
 ---
 
@@ -48,7 +48,7 @@ Nature or Tech" is an interactive choose-your-own-journey narrative game that ce
     * [Performance Report](#lighthouse)
   * [Bugs & Fixes](#bugs--fixes)
   * [Credits](#credits) 
-    * [Content References](#references) 
+    * [References](#references) 
     * [Copyright](#copytright)
     * [Acknowledgements](#acknowledgements)
 
@@ -155,6 +155,15 @@ Through mind mapping, I was able to create a world-building framework for both p
 
 ![Worldbuilding](assets/images/worldbuilding.png)
 
+### **4. Story Structure for JavaScript**  
+
+This JavaScript code defines a central data structure named scenes that contains scenes of a story. It is a dictionary object with keys as the names of scenes and values as objects that contain three fields: title, image, context, and choices.
+
+The title field contains the title of the scene, image contains the image of the scene, context provides some context for the scene, and choices is a list of objects that represents the available choices for the user.
+
+Each choice is an object with two properties, text and destination. The text property represents the label for the button, and the destination property represents the scene to which the user will be taken when they press the button.
+
+
 --- 
 
 ## Wireframes
@@ -224,6 +233,8 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 --- 
 
 ## Desktop, Tablet & Mobile Preview
+
+![Responsive](assets/images/homepage.PNG) 
 
 ### **Desktop**  
 
@@ -330,8 +341,9 @@ Testing took place throughout the entire build using Dev Tools on Chrome and on 
 - Opera  
 - Edge  
    
-### **HTML Validation using W3C Validation**  
+### **HTML Validation using W3C Validation** 
 
+![screenshot of CSS validation](assets/images/HTML.PNG)
 
 ### **CSS Validation using W3C Validation** 
 
