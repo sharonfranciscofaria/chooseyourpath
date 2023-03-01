@@ -85,6 +85,8 @@ nav {
   .home-button {
     font-size: large;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 
   /* Video and overlay */

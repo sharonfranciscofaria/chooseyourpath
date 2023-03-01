@@ -1,6 +1,6 @@
 # Nature or Tech
 
-[View live project here on GitHub](https://solracnauj92.github.io/Hero-s-Tale/)
+[View live project here on GitHub](https://sharonfranciscofaria.github.io/chooseyourpath/)
 
 Nature or Tech" is an interactive choose-your-own-journey narrative game that centers around the idea of having to choose between nature and technology in our daily lives. The game features two distinct story paths that players can choose from, each with its own character and unique storyline.
 <br>  
