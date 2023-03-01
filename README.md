@@ -124,3 +124,35 @@ Nature or Tech" is an interactive choose-your-own-journey narrative game that ce
 <br>
 
 --- 
+
+## Story Development 
+  
+### **1. Characters**  
+The first thing I have done is finding my character. This is important as a story developer to visualise them in situations whilst I build up the story. Canva provided me with character designs featuring various poses and actions. I carefully selected designs that matched in appearance for the fox. Unfortunately, there were fewer options available for the cat in comparison, so I utilized similar cat designs and primarily used black and white colors to maintain a cohesive aesthetic between the two characters.
+
+![Paddington](assets/images/Paddington.png) 
+
+One of my favorite characters of all time is Paddington, created by Michael Bond. Initially from the jungle, Paddington later finds himself exploring the city. In my case, I have switched things around because the colors of the fox reminded me of Paddington, and since a fox is more likely to prefer living in nature, I thought it would be fitting to have a cat as the city-dwelling character.
+
+![Marshmallow](assets/images/marshmallow.png)
+
+The reason I gave the cat the name Marshmallow was because to me, it resembled a marshmallow.
+
+### **2. Locations & Objects**  
+
+After that, I selected the necessary location and objects for the scene. As a story developer, this step is crucial for me to envision the story as I construct it.
+
+![City](assets/images/locations2.svg)
+
+<br>
+
+![Woods](assets/images/locations.svg)
+
+
+### **3. World Building**  
+
+Through mind mapping, I was able to create a world-building framework for both paths in my game. Each scene seamlessly transitions into the next, creating a guide to the overall direction of the game. By visualising this framework on Figma, I was able to analyze the story from a more organised perspective and refine the paths to further develop the narrative.
+
+![Worldbuilding](assets/images/worldbuilding.png)
+
+--- 
