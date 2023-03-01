@@ -303,3 +303,93 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
     - Icons was used to download image needed and create favicon
 
 ---   
+## Deployment
+
+### **How to deploy**  
+
+GitHub was used to deploy the website. These were the steps taken to achieve this:  
+
+1. Login to GitHub account
+2. Navigate to the project repository
+3. Click the Settings button near the top of the page
+4. In the left-hand menu, find and click on the Pages button
+5. In the Source section, choose 'main' from the drop-down, select branch menu
+6. Select 'root' from the drop-down folder menu
+7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page
+
+---  
+    
+## Audits 
+
+This website was designed to be usable and readable on all screen sizes.
+  
+### **Testing**    
+
+Testing took place throughout the entire build using Dev Tools on Chrome and on the above real-world devices. The browsers used were:  
+- Chrome  
+- Opera  
+- Edge  
+   
+### **HTML Validation using W3C Validation**  
+
+
+### **CSS Validation using W3C Validation** 
+
+![screenshot of CSS validation](assets/images/CSS.PNG)
+
+   
+### **Bugs & Fixes**  
+ 1. To ensure that the video does not overlap with the navigation and footer elements, I styled in CSS to create separate containers for each of them and bring them forward in the layout and ensure it's responsive across all devices. 
+
+ 2. To address the issue of the text overlapping the video and the white footer appearing, I implemented a solution by designing a video container that fits the entire frame. Additionally, I created a separate container that consolidates the title, context, and image. This allows users to scroll through this section without encountering the problem of the page being cut off and leaving a white footer.
+
+ 3. Initially, the audio on my website played automatically as soon as the user entered the site, without giving them any control over it. To address this issue, I used JavaScript to create functions that enable the user to turn the sound on and off at their discretion by simply pressing a button.
+
+### **Unsolved Bugs** 
+ 
+1. Even though I was able to come up with an alternative solution for the video to fill the page, my initial intention was to have the video stretch across the page and expand, which would have eliminated the need for a scroll-down feature for the main body section.
+
+2. The scroll functionality for the body section is not visible on the mobile and tablet versions, and sometimes it may not be visible on the desktop version as well. This could potentially confuse the user, leading them to believe that the page is static and they cannot scroll through it.
+---  
+
+## Credits  
+  
+### **References**
+
+- [Code Institute](https://codeinstitute.net/ie/) 
+- [W3Schools](https://www.w3schools.com/) 
+- [StackOverflow](https://stackoverflow.com/)
+- [The Wheelchair Guy : How to play Audio Files with JavaScript](https://www.youtube.com/watch?v=3xlws5og44U)
+- [Free Code: How To Add Full Screen Video In HTML, CSS](https://www.youtube.com/watch?v=4WMsIele2lI)
+- [Times of India](https://timesofindia.indiatimes.com/readersblog/taneesha-ahuja/impact-of-technology-on-environment-43973/)
+- [UN](https://www.unep.org/explore-topics/technology/why-does-technology-matter)
+- [Deloitte](https://www2.deloitte.com/uk/en/pages/about-deloitte-uk/articles/the-green-room-podcast-episode.html?episode=27#/the-green-room-podcast-is-technology-our-planets-best-hope.html)
+- [World Economic Forum](https://www.weforum.org/agenda/2018/08/here-s-how-technology-can-help-us-save-the-planet/)
+- [Nature](https://www.nature.com/articles/nature10682)
+
+### **Copyright**
+
+- Artwork & Video: I have used Canva Pro, a paid version of Canva that provides users with access to additional features and resources, including a wider range of images, graphics, and templates. Canva Pro users have access to a large library of licensed materials that can be used in their designs without violating copyright laws. 
+
+<br>
+
+- Story: As the writer of this story, I used my research skills and scriptwriting expertise to develop a narrative that explores the balance between nature and technology. Inspired by my passion for environmental sustainability and appreciation for the benefits of technology, I crafted a story that delves into the complexities of this topic. By weaving together different themes and ideas, I created a unique storyline that reflects my personal values and interests.
+
+<br>
+
+- Audio:The audio was found through Pixabay, an open source platform for images, audio and other graphics. The composer Aleksey Chistilin has over 10 years of experience in composition and music arrangement. Inspired by notable Cinematic composers, his music has been used in multimedia exhibitions and award-winning arthouse films.
+<br>
+[Royalty Free Music by Lexin Music](https://pixabay.com/music/beautiful-plays-spirit-landscape-118015/) 
+<br>
+
+
+### **Acknowledgements** 
+  1. My tutor at Westminster Adult Education Service, Richey Malhotra who helped me immensely from the beginning of the project to when I got stuck at some codes. A big thanks for guiding me throughout the whole project.
+
+  <br>
+
+  2. My classmates and team at Westminster Adult Education Service who have been kind to help one another when in need, share ideas and jokes around when working together!
+
+  <br>
+  
+  3. My partner Juan Carlos Diaz Lara, whom I am thankful for introducing me into this coding world and taking the journey with me.
