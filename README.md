@@ -222,3 +222,84 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 [Lexin Music by Aleksey Chistilin](https://pixabay.com/music/beautiful-plays-spirit-landscape-118015/) 
 
 --- 
+
+## Desktop, Tablet & Mobile Preview
+
+### **Desktop**  
+
+ 
+### **Tablet**
+
+
+### **Mobile**
+
+--- 
+
+## Future Features  
+ - Branching the story: This would allow for a more dynamic and personalized experience, as players' previous choices would impact the storyline and the outcome of the game. 
+
+ <br>
+
+ - Multiplayer: This could allow players to work together to achieve a common goal. The multiplayer mode could also include features such as chat or voice communication, leaderboards, and rewards for cooperative play. This could enhance the social aspect of the game and provide an additional layer of engagement for players.
+
+ <br>
+
+ - Customisation: This could allow players to customise their character's appearance and clothing, as well as the environment in which the game takes place. For example, players could choose different outfits that reflect their personal style or select different backgrounds or landscapes that suit their preferences. This could enhance the game's replayability and allow players to create a more personalised experience.
+
+ <br>
+
+ - Providing Feedback and Suggestions: Providing feedback and suggestions using the website rather via social media. 
+
+ <br>
+
+ - Resources: The website may provide additional resources and information related to environmental sustainability and technology use.
+
+ <br>
+
+ - Events: Organising local events based on location to create awareness
+
+ <br>
+
+---   
+  
+## Technologies Used    
+
+- HTML
+    - HTML is used to structure and use Bootstrap components by adding specific classes.
+- CSS
+    - CSS is used to style components used for the website
+- Javascript
+    - Javascript is used to create interactive and engaging games with dynamic graphics and user interfaces.
+- [Google Fonts](https://fonts.google.com/)
+    - I used Google Fonts as it has a library of 1493 open source font families:
+      1. [VT323, Designed by Peter Hull](https://fonts.google.com/specimen/VT323)
+      2. [Quicksand, Designed by Andrew Paglinawan](https://fonts.google.com/specimen/Quicksand)
+- [Figma](https://www.figma.com)
+    - The wireframes and the world building was pre-planned and designed via Figma. 
+- [Canva](https://www.canva.com/)
+    - Canva was used for: 
+      1. Granting copyright free graphics to use and create artwork and download in svg / PNG. 
+      2. Copyright copyright free video to use as background of website
+      3. Designing and testing visuals 
+- [Pixabay](https://pixabay.com/users/lexin_music-28841948/?tab=about)
+    - Pixabay granted me copyright free music 
+- [Coolors](https://coolors.co/)
+    - Generated the brand colour palatte
+- [QuillBot](https://quillbot.com/)
+    - QuillBot was used scan writings and alert any errors in grammar, spelling, punctuation as well as rephrase any research used for the website
+- [ChatGPT](https://openai.com/blog/chatgpt/)
+    - This was used inform a summary of a topic, for example about nature or tech.
+- [GitHub](https://github.com/sharonfranciscofaria)
+    - Github stores, manages, and track changes to the project code
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    - Chrome DevTools helped to debug, inspect, test the website's responsive design and check performance analysis tools
+- [Am I responsive](https://ui.dev/amiresponsive)
+    - Mock up and check responsiveness across different devices 
+- [Get Emoji ](ttps://getemoji.com/)
+    - Text emojis were used for the home and audio button
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used to access to open source social media icons
+- [Icons]( https://icons8.com/icons/set/game)
+    - Icons was used to download image needed and create favicon
+
+---   
