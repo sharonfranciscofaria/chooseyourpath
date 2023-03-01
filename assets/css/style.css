@@ -159,5 +159,29 @@ nav {
   .show {
     visibility: visible;
   }
+
+  /* Footer */
+footer {
+    color: #ffffff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #c0c4c2;
+  }
+  
+  .fa {
+    font-size: 15px;
+  }
   
   
