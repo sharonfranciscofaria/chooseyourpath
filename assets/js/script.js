@@ -28,7 +28,7 @@ const scenes = {
     },
     'characters': {
       title: 'Meet the characters',
-      context: 'Paddington is a nature lover, while his best friend, a tech-loving cat, enjoys a luxurious lifestyle. Despite their differences, they share a strong friendship. It is time that you choose would would you like to go with?',
+      context: 'Paddington is a nature lover, while his best friend, a tech-loving cat, enjoys a luxurious lifestyle. Despite their differences, they share a strong friendship. It is time that you choose who would you like to go with?',
       choices: [
         {
             text: 'Join Paddington!',
@@ -445,6 +445,85 @@ const scenes = {
       }
     ]
   },
+
+  // Marshmallow Path
+
+  'car': {
+    title: 'Car: Getting late?',
+    context: 'Marshmallow takes her car and is ready to go.. a couple of minutes later, she gets stuck in the middle of the traffic. She opens the window trying to breathe but it’s toxic and highly polluted.',
+    choices: [
+      {
+        text: 'Try to park and walk',
+        destination: 'walk'
+      },
+      {
+        text: 'Try to park and take the train',
+        destination: 'train'
+      },
+      {
+        text: 'Stay and be patience',
+        destination: 'work'
+      }
+    ]
+  },
+
+  'walk': {
+    title: 'Walk: Getting late?',
+    context: 'As you walk, you notice that nobody smiles or greets one another. The constant barrage of notifications and alerts on their devices seems to have made people forget how to interact with each other in real life. The world seems cold, sterile, and devoid of any human connection.',
+    choices: [
+      {
+        text: 'Ignore the feeling',
+        destination: 'work'
+      },
+      {
+        text: 'Check your phone',
+        destination: 'work'
+      },
+      {
+        text: 'Focus on getting to work',
+        destination: 'work'
+      }
+    ]
+  },
+
+  'train': {
+    title: 'Train: Getting late?',
+    context: 'Marshmallow takes the train, it’s quick to get to work. Trains or subways produce only one-third of carbon dioxide emissions compared to the average passenger vehicle.  You notice that no one is making eye contact, and nobody seems to acknowledge your presence. People walk with their heads down, scrolling through their phones or typing away on their laptops.',
+    choices: [
+      {
+        text: 'Ignore the feeling and carry on',
+        destination: 'work'
+      },
+      {
+        text: 'Read a book',
+        destination: 'work'
+      },
+      {
+        text: 'Check your phone',
+        destination: 'work'
+      }
+    ]
+  },
+
+  'work': {
+    title: 'First day at work',
+    context: 'Marshmallow makes her way towards the towering high-tech building, her first day of work. The building is a sleek and modern structure, with shining glass panels, fake plants and polished metal accents. ',
+    choices: [
+      {
+        text: 'Go and check out those new techs!',
+        destination: 'explore'
+      },
+      {
+        text: 'Make some new friends?',
+        destination: 'friends'
+      },
+      {
+        text: 'Walk around the building and explore!',
+        destination: 'explore'
+      }
+    ]
+  },
+
 }
   
   // Get the HTML elements
@@ -525,7 +604,16 @@ const scenes = {
       picture.src = './assets/images/end6.svg';
     } else if (sceneName === 'end7') {
       picture.src = './assets/images/end7.svg';
+    } else if (sceneName === 'car') {
+      picture.src = './assets/images/car.svg';
+    } else if (sceneName === 'walk') {
+      picture.src = './assets/images/walk.svg';
+    } else if (sceneName === 'train') {
+      picture.src = './assets/images/train.svg';
+    } else if (sceneName === 'work') {
+      picture.src = './assets/images/work.svg';
     }
+
 
 
 

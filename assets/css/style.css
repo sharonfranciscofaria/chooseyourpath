@@ -153,8 +153,7 @@ nav {
   
   .button-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
   }
   
   
@@ -203,3 +202,10 @@ footer {
   }
   
   
+
+  @media (max-width: 800px) {
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
