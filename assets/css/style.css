@@ -143,12 +143,11 @@ nav {
 #button2,
 #button3 {
     width: 200px;
-    font-size: 22px;
+    font-size: 20px;
     padding: 5px;
     border: none;
     cursor: pointer;
     font-family: 'VT323', monospace;
-    text-transform: uppercase;
   }
   
   

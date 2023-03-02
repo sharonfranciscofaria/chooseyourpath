@@ -5,6 +5,7 @@
 // dictionary for which each key is the name of a scene, and each value is an object which contains three fields: title, context, and choices
 // choices is itself a list of objects, where each object is a label for a button and the scene to jump to when that button is pressed
 
+
 // The scenes and choices
 const scenes = {
     'start': {
@@ -27,11 +28,11 @@ const scenes = {
     },
     'characters': {
       title: 'Meet the characters',
-      context: 'Paddington is a nature lover, while his best friend, a tech-loving cat, enjoys a luxurious lifestyle. Despite their differences, they share a strong friendship. Who wil you join? ',
+      context: 'Paddington is a nature lover, while his best friend, a tech-loving cat, enjoys a luxurious lifestyle. Despite their differences, they share a strong friendship. It is time that you choose would would you like to go with?',
       choices: [
         {
             text: 'Join Paddington!',
-            destination: 'wood'
+            destination: 'woods'
           },
           {
             text: 'Join Marshmallow',
@@ -45,15 +46,15 @@ const scenes = {
     },
     'howtoplay': {
       title: 'How to Play',
-      context: 'Start by reading the introduction or prologue of the game to get a sense of the setting and characters. As you progress through the game, you will be presented with different scenarios and choices. Read each choice carefully and think about what you want to do. Scroll and click on the button that corresponds to the choice you want to make. Choose wisely!Read the text carefully and try to immerse yourself in the narrative. Continue making choices and exploring the different paths until you reach the end of the game.These are the instructions for playing the game.',
+      context: 'Start by reading the introduction or prologue of the game to get a sense of the setting and characters. As you progress through the game, you will be presented with different scenarios and choices. Read each choice carefully and think about what you want to do. Scroll and click on the button that corresponds to the choice you want to make. Choose wisely!',
       choices: [
         {
-            text: 'Join Paddington!',
-            destination: 'wood'
+            text: 'Begin!',
+            destination: 'characters'
           },
           {
-            text: 'Join Marshmallow',
-            destination: 'city'
+            text: 'About',
+            destination: 'about'
           },
           {
             text: 'Home',
@@ -78,8 +79,373 @@ const scenes = {
             destination: 'start'
           }
       ]
-    }
-  };
+    },
+
+    'woods': {
+        title: 'Into the woods',
+        context: 'As Paddington immersed himself in the sights and sounds of nature, he lost track of time until he realised it was getting late, and he was left thirsty and hungry with no more water or food left.,',
+        choices: [
+          {
+              text: 'Try to find a shelter',
+              destination: 'night'
+            },
+            {
+              text: 'Try to find food',
+              destination: 'food'
+            },
+            {
+              text: 'Try to find water',
+              destination: 'water'
+            }
+        ]
+    },
+
+    'city': {
+      title: 'Living the life: a fantasy',
+      context: 'Marshmallow gets so excited having access to all of the gadgets and lavish lifestyle. She prepares for her first day and is excited to start her week in this high-tech world. Her first challenge? Getting to work on time.',
+      choices: [
+        {
+            text: 'Take the car',
+            destination: 'car'
+          },
+          {
+            text: 'Take the train',
+            destination: 'train'
+          },
+          {
+            text: 'Walk!',
+            destination: 'walk'
+          }
+      ]
+  },
+
+ // Paddington Path 
+
+  'food': {
+    title: 'The Blue Lake: Safe or not safe',
+    context: 'Paddington searches for food in the dense forest for hours, his hunger growing more intense. Just as he was about to lose hope, he remembered he could use his phone! He followed the map and finally found a lake!',
+    choices: [
+      {
+          text: 'Go fishing',
+          destination: 'fish'
+        },
+        {
+          text: 'Hunt',
+          destination: 'hunt'
+        },
+        {
+          text: 'Eat wild berries!',
+          destination: 'end1'
+        }
+    ]
+  },
+
+  'water': {
+    title: 'The Blue Lake: Safe or not safe',
+    context: 'Paddington searches for water in the dense forest for hours, his thirst growing more intense. Just as he was about to lose hope, he remembered he could use his phone! He followed the map and finally found a lake!',
+    choices: [
+      {
+          text: 'Collect berries and smash it into juice',
+          destination: 'end2'
+        },
+        {
+          text: 'Skip for tonight, sleep there for the night',
+          destination: 'end3'
+        },
+        {
+          text: 'Eat wild berries!',
+          destination: 'night'
+        }
+    ]
+  },
+
+  'fish': {
+    title: 'Wood and Fire',
+    context: 'Eager to satisfy his hunger, he quickly fashioned a makeshift fishing rod from a stick and some twine. After several attempts, he finally managed to catch a small fish. But then, he realised he had no kitchen! He searched his surroundings for anything that could help him start a fire.',
+    choices: [
+      {
+          text: 'Cut down some wood',
+          destination: 'end4'
+        },
+        {
+          text: 'Start fire',
+          destination: 'end5'
+        },
+        {
+          text: 'Set wood branches and then fire',
+          destination: 'night'
+        }
+    ]
+  },
+
+  'night': {
+    title: 'First night',
+    context: 'Paddington settles down to sleep. But in the middle of the night, he wakes up feeling alone and nostalgic about his life before his forest adventure. He decides to call Marshmallow. Do you think he will pick up?',
+    choices: [
+      {
+          text: 'Ofcourse!',
+          destination: 'onemonth'
+        },
+        {
+          text: 'Why not?',
+          destination: 'onemonth'
+        },
+        {
+          text: 'No',
+          destination: 'onemonth'
+        }
+    ]
+  },
+
+  'onemonth': {
+    title: 'One month later',
+    context: 'Marshmallow helped Paddington in finding a cave, its his new home now. It has been over a month.. Paddington became tired of eating the same food. Now more alert to the dangers of wild animals, Paddington decides to venture further into the forest in search of new sources of food and supplies.',
+    choices: [
+      {
+          text: 'Try the new berries growing',
+          destination: 'danger'
+        },
+        {
+          text: 'Go fishing! It’s safe!?',
+          destination: 'danger'
+        },
+        {
+          text: 'Hunt',
+          destination: 'end6'
+        }
+    ]
+  },
+
+  'danger': {
+    title: 'A new friend?',
+    context: 'After eating, on his way back, Paddington encounters a wild bear.',
+    choices: [
+      {
+          text: 'Run',
+          destination: 'call'
+        },
+        {
+          text: 'Hide',
+          destination: 'call'
+        },
+        {
+          text: 'Try to befriend it',
+          destination: 'end7'
+        }
+    ]
+  },
+
+  'call': {
+    title: 'A close call',
+    context: 'He escapes the creature and gets lost. He uses GPS to find his way home and starts marking his path. Paddington hesitates to call his friend to save his phone battery but decides to call anyway. Do you think he did the right thing?',
+    choices: [
+      {
+          text: 'What if there is an emergency',
+          destination: 'reunited'
+        },
+        {
+          text: 'Why not?',
+          destination: 'reuntied'
+        },
+        {
+          text: 'Its important to stay connected!',
+          destination: 'reunited'
+        }
+    ]
+  },
+
+  'reunited': {
+    title: 'Reunited',
+    context: 'Marshmallow pays a visit to Paddington and confides that she has been struggling with stress in the city. However, being in the forest has helped her relax. She is amazed by its beauty and peacefulness. Paddington and Marshmallow experiences taught them important lessons about themselves and the world. Paddington learned the value of resourcefulness and adapting to change, while Marshmallow discovered the joy of slowing down and appreciating life simple pleasures. As Marshmallow was about to leave he',
+    choices: [
+      {
+          text: 'Ask Paddington if he could stay',
+          destination: 'coexisting'
+        },
+        {
+          text: 'Ask Paddington to come along?',
+          destination: 'coexisting'
+        },
+        {
+          text: 'Why cant we coexist both world?',
+          destination: 'coexisting'
+        }
+    ]
+  },
+
+  'coexisting': {
+    title: 'Coexisting',
+    context: 'Together, Paddington and Marshmallow joined forces to bridge the gap between the natural world and technology. They became champions for sustainability and environmental preservation, leveraging their diverse perspectives to create a better future for all.',
+    choices: [
+      {
+          text: 'We can do this!',
+          destination: 'final'
+        },
+        {
+          text: 'A better future?',
+          destination: 'final'
+        },
+        {
+          text: 'Together',
+          destination: 'final'
+        }
+    ]
+  },
+
+  'final': {
+    title: 'Congratulations!',
+    context: 'Congratulations! Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. Thank you for playing! Do not hesitate to restart the game to explore Marshmallow Path.',
+    choices: [
+      {
+          text: 'Restart',
+          destination: 'start'
+        },
+        {
+          text: 'Join Marshmallow',
+          destination: 'city'
+        },
+        {
+          text: 'About',
+          destination: 'about'
+        }
+    ]
+  },
+
+  // Paddingtons endings
+  
+  'end1': {
+    title: 'Poison!',
+    context: 'Sorry you ate some poisonous berries and got sick. You tried to call the A&E but could not get any network. Try again.',
+    choices: [
+      {
+          text: 'Go back',
+          destination: 'food'
+        },
+        {
+          text: 'Restart',
+          destination: 'start'
+        },
+        {
+          text: 'About',
+          destination: 'about'
+        }
+    ]
+  },
+
+  'end2': {
+    title: 'Unfiltered Water!',
+    context: 'Sorry you drank unfiltered water and got sick. You tried to call the A&E but could not get any network. Try again.',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
+  'end3': {
+    title: 'Poison!!',
+    context: 'Sorry you drank some poisonous berries and got sick. You tried to call the A&E but could not get any network. Try again',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
+  'end4': {
+    title: 'The tree falls on you!!',
+    context: 'You have no skills cutting down a tree and so instead of cutting it away from you, you cut it towards you. plus, cutting down trees leads to climate change, soil erosion, desertification, fewer crops, floods, more greenhouse gases in the air, and numerous issues.',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
+  'end5': {
+    title: 'Fire!',
+    context: 'You start up a fire in the woods and you are unable to control it. Try again!',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
+  'end6': {
+    title: 'Hunt to be hunted!',
+    context: 'You have no skills hunting, instead those wild animals attacked you and you got hurt. Plus, Hunting can lead to the loss of biodiversity, disturbance to ecosystems, and the depletion of populations of certain species.',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
+  'end7': {
+    title: 'Hunted',
+    context: 'While bears can be accustomed to humans through training, they cannot be entirely domesticated. These solitary animals demand an extensive amount of food and will hunt when in need.',
+    choices: [
+      {
+        text: 'Go back',
+        destination: 'food'
+      },
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+}
   
   // Get the HTML elements
   const picture = document.getElementById('picture');
@@ -119,7 +485,50 @@ const scenes = {
       picture.src = './assets/images/characters.svg';
     } else if (sceneName === 'about') {
       picture.src = './assets/images/about.svg';
+    } else if (sceneName === 'woods') {
+      picture.src = './assets/images/woods.svg';
+    } else if (sceneName === 'city') {
+      picture.src = './assets/images/city.svg';
+    } else if (sceneName === 'food') {
+      picture.src = './assets/images/food.svg';
+    } else if (sceneName === 'water') {
+      picture.src = './assets/images/water.svg';
+    } else if (sceneName === 'fish') {
+      picture.src = './assets/images/fish.svg';
+    } else if (sceneName === 'night') {
+      picture.src = './assets/images/night.svg';
+    } else if (sceneName === 'onemonth') {
+      picture.src = './assets/images/onemonth.svg';
+    } else if (sceneName === 'danger') {
+      picture.src = './assets/images/danger.svg';
+    } else if (sceneName === 'call') {
+      picture.src = './assets/images/call.svg';
+    } else if (sceneName === 'reunited') {
+      picture.src = './assets/images/reunited.svg';
+    } else if (sceneName === 'reunited') {
+      picture.src = './assets/images/reunited.svg';
+    } else if (sceneName === 'coexisting') {
+      picture.src = './assets/images/coexisting.svg';
+    } else if (sceneName === 'final') {
+      picture.src = './assets/images/final.svg';
+    } else if (sceneName === 'end1') {
+      picture.src = './assets/images/end1.svg';
+    } else if (sceneName === 'end2') {
+      picture.src = './assets/images/end2.svg';
+    } else if (sceneName === 'end3') {
+      picture.src = './assets/images/end3.svg';
+    } else if (sceneName === 'end4') {
+      picture.src = './assets/images/end4.svg';
+    } else if (sceneName === 'end5') {
+      picture.src = './assets/images/end5.svg';
+    } else if (sceneName === 'end6') {
+      picture.src = './assets/images/end6.svg';
+    } else if (sceneName === 'end7') {
+      picture.src = './assets/images/end7.svg';
     }
+
+
+
   
     button1.textContent = scene.choices[0].text;
     button2.textContent = scene.choices[1].text;
