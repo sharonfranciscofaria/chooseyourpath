@@ -227,7 +227,7 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 --- 
 
 ## Desktop, Tablet & Mobile Responsiveness 
-My website is designed to be responsive and accessible on any device, mainly thanks to its scrolling functionality.
+My website is designed to be responsive and accessible on any device, mainly thanks to its scrolling functionality. I have tested them across all devices (Iphone, Ipads, Samsung tablets, Ipad mini, Desktop) using google dev tools.
 
 ![Responsive](assets/images/responsive.svg)
 
@@ -358,9 +358,6 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 2. The website game may crash if played too quickly. However, since it is a narrative-based game, the user is compelled to take their time and cannot rush to click the next page, which helps to prevent crashes.
 
 3. Not being able to control the volume when played 
-
-4. The images do take time to load. 
-
 ---  
 
 ## Credits  

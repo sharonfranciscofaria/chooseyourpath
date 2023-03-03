@@ -125,7 +125,7 @@ const scenes = {
       },
       {
         text: 'Hunt',
-        destination: 'hunt'
+        destination: 'end6'
       },
       {
         text: 'Eat wild berries!',
@@ -142,12 +142,12 @@ const scenes = {
         destination: 'end2'
       },
       {
-        text: 'Skip for tonight, sleep there for the night',
-        destination: 'end3'
+        text: 'Skip for tonight, sleep',
+        destination: 'night'
       },
       {
-        text: 'Eat wild berries!',
-        destination: 'night'
+        text: 'Drink water!',
+        destination: 'end3'
       }
     ]
   },
@@ -172,7 +172,7 @@ const scenes = {
 
   'night': {
     title: 'First night',
-    context: 'Paddington settles down to sleep. But in the middle of the night, he wakes up feeling alone and nostalgic about his life before his forest adventure. He decides to call Marshmallow. Do you think he will pick up?',
+    context: 'Paddington settles down to sleep. But in the middle of the night, he wakes up feeling alone and nostalgic about his life before his forest adventure. He decides to call Marshmallow. Do you think she will pick up?',
     choices: [{
         text: 'Ofcourse!',
         destination: 'onemonth'
@@ -207,7 +207,7 @@ const scenes = {
   },
 
   'danger': {
-    title: 'A new friend?',
+    title: 'Danger...',
     context: 'After eating, on his way back, Paddington encounters a wild bear.',
     choices: [{
         text: 'Run',
@@ -233,7 +233,7 @@ const scenes = {
       },
       {
         text: 'Why not?',
-        destination: 'reuntied'
+        destination: 'reunited'
       },
       {
         text: 'Its important to stay connected!',
@@ -265,20 +265,20 @@ const scenes = {
     context: 'Together, Paddington and Marshmallow joined forces to bridge the gap between the natural world and technology. They became champions for sustainability and environmental preservation, leveraging their diverse perspectives to create a better future for all.',
     choices: [{
         text: 'We can do this!',
-        destination: 'final'
+        destination: 'final1'
       },
       {
         text: 'A better future?',
-        destination: 'final'
+        destination: 'final1'
       },
       {
         text: 'Together',
-        destination: 'final'
+        destination: 'final1'
       }
     ]
   },
 
-  'final': {
+  'final1': {
     title: 'Congratulations!',
     context: 'Congratulations! Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. <br> Thank you for playing! Do not hesitate to restart the game to explore Marshmallow Path.',
     choices: [{
@@ -317,11 +317,11 @@ const scenes = {
   },
 
   'end2': {
-    title: 'Unfiltered Water!',
-    context: 'Sorry you drank unfiltered water and got sick. You tried to call the A&E but could not get any network. Try again.',
+    title: 'Poison!!',
+    context: 'Sorry you drank some poisonous berries and got sick. You tried to call the A&E but could not get any network. Try again',
     choices: [{
         text: 'Go back',
-        destination: 'food'
+        destination: 'water'
       },
       {
         text: 'Restart',
@@ -335,11 +335,11 @@ const scenes = {
   },
 
   'end3': {
-    title: 'Poison!!',
-    context: 'Sorry you drank some poisonous berries and got sick. You tried to call the A&E but could not get any network. Try again',
+    title: 'Unfiltered Water!',
+    context: 'Sorry you drank unfiltered water and got sick. You tried to call the A&E but could not get any network. Try again.',
     choices: [{
         text: 'Go back',
-        destination: 'food'
+        destination: 'water'
       },
       {
         text: 'Restart',
@@ -357,7 +357,7 @@ const scenes = {
     context: 'You have no skills cutting down a tree and so instead of cutting it away from you, you cut it towards you. plus, cutting down trees leads to climate change, soil erosion, desertification, fewer crops, floods, more greenhouse gases in the air, and numerous issues.',
     choices: [{
         text: 'Go back',
-        destination: 'food'
+        destination: 'fish'
       },
       {
         text: 'Restart',
@@ -411,7 +411,7 @@ const scenes = {
     context: 'While bears can be accustomed to humans through training, they cannot be entirely domesticated. These solitary animals demand an extensive amount of food and will hunt when in need.',
     choices: [{
         text: 'Go back',
-        destination: 'food'
+        destination: 'danger'
       },
       {
         text: 'Restart',
@@ -518,17 +518,17 @@ const scenes = {
 
   'explore': {
     title: 'Explore',
-    context: 'You are amazed by the tech and the environment. You try the new VR device hoping to give a sense of nature in the virtual world. You spend hours wandering the city, but find nothing resembling nature. As the day wears on, you start to feel more and more frustrated and disconnected from the world around you.',
+    context: 'You try the new VR device hoping to give a sense of nature in the virtual world. You spend hours wandering the city, but find nothing resembling nature. As the day wears on, you start to feel more and more frustrated and disconnected from the world around you.',
     choices: [{
-        text: 'Go grab it',
+        text: 'Lets go eat',
         destination: 'lonely'
       },
       {
-        text: 'Are we even allowed?',
+        text: 'Lets go home',
         destination: 'lonely'
       },
       {
-        text: 'Lets do it!!',
+        text: 'Try to call Paddington',
         destination: 'lonely'
       }
     ]
@@ -539,21 +539,21 @@ const scenes = {
     context: 'After a month has gone by, Marshmallow has grown tired of this city. She longs for the company of her friends and the simple pleasures of life, such as breathing in fresh air, indulging in good quality food, taking trips to the beach, or strolling through the park and listening to the chirping of birds. <br> These feelings of longing and isolation leave Marshmallow feeling downcast and depressed, prompting her to consider reaching out to Paddington for comfort. Do you think he will answer?',
     choices: [{
         text: 'Why not?',
-        destination: 'coexisting2'
+        destination: 'visit'
       },
       {
         text: 'ofcourse!',
-        destination: 'coexisting2'
+        destination: 'visit'
       },
       {
         text: 'I wish he was here',
-        destination: 'coexisting2'
+        destination: 'visit'
       }
     ]
   },
 
-  'coexisting2': {
-    title: 'Reunited',
+  'visit': {
+    title: 'A visit',
     context: 'Paddington pays Marshmallow a visit and shares that he has been facing difficulties meeting his basic needs, such as food and shelter. Nonetheless, being in the city has provided him with easy access to safe food, financial resources, electricity, heating, and the ability to stay connected with friends and family worldwide. Through their respective experiences, both Paddington and Marshmallow have gained valuable insights about themselves and the world. <br> Paddington has come to appreciate the importance of resourcefulness and adapting to change, whereas Marshmallow has learned to savour life simple pleasures and embrace a slower pace of living.',
     choices: [{
         text: 'Stop Paddington from leaving?',
@@ -571,7 +571,7 @@ const scenes = {
   },
 
   'final2': {
-    title: 'Reunited',
+    title: 'Congratulations!',
     context: 'Congratulations! Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. <br> By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. Thank you for playing! Do not hesitate to restart the game to explore Paddingtons Path.',
     choices: [{
         text: 'Restart',
@@ -652,8 +652,8 @@ function updateScene(sceneName) {
     picture.src = './assets/images/reunited.svg';
   } else if (sceneName === 'coexisting') {
     picture.src = './assets/images/coexisting.svg';
-  } else if (sceneName === 'final') {
-    picture.src = './assets/images/final.svg';
+  } else if (sceneName === 'final1') {
+    picture.src = './assets/images/final1.svg';
   } else if (sceneName === 'end1') {
     picture.src = './assets/images/end1.svg';
   } else if (sceneName === 'end2') {
@@ -682,8 +682,8 @@ function updateScene(sceneName) {
     picture.src = './assets/images/explore.svg';
   } else if (sceneName === 'lonely') {
     picture.src = './assets/images/lonely.svg';
-  } else if (sceneName === 'coexisting2') {
-    picture.src = './assets/images/coexisting2.svg';
+  } else if (sceneName === 'visit') {
+    picture.src = './assets/images/visit.svg';
   } else if (sceneName === 'final2') {
     picture.src = './assets/images/final2.svg';
   }
