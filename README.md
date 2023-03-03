@@ -1,6 +1,6 @@
 # Nature or Tech
 
-[View live project here on GitHub](https://sharonfranciscofaria.github.io/chooseyourpath/)
+[View live project](https://sharonfranciscofaria.github.io/chooseyourpath/)
 
 Nature or Tech" is an interactive choose-your-own-journey narrative game that centers around the idea of having to choose between nature and technology in our daily lives. The game features two distinct story paths that players can choose from, each with its own character and unique storyline.
 <br>  
@@ -42,7 +42,9 @@ Nature or Tech" is an interactive choose-your-own-journey narrative game that ce
     * [CSS Validation](#tablet-preview)
     * [JS Validation](#mobile-preview) 
     * [Performance Report](#lighthouse)
-  * [Bugs & Fixes](#bugs--fixes)
+    * [Bugs & fixes](#bugs-fixes)
+    * [Unsolved bugs](#unsolved-bugs) 
+    * [Feedbacks from testers](#feedback)
   * [Credits](#credits) 
     * [References](#references) 
     * [Copyright](#copytright)
@@ -153,11 +155,7 @@ Through mind mapping, I was able to create a world-building framework for both p
 
 ### **4. Story Structure for JavaScript**  
 
-This JavaScript code defines a central data structure named scenes that contains scenes of a story. It is a dictionary object with keys as the names of scenes and values as objects that contain three fields: title, image, context, and choices.
-
-The title field contains the title of the scene, image contains the image of the scene, context provides some context for the scene, and choices is a list of objects that represents the available choices for the user.
-
-Each choice is an object with two properties, text and destination. The text property represents the label for the button, and the destination property represents the scene to which the user will be taken when they press the button.
+This code updates and manipulates the content of an HTML page based on user interaction. It gets references to various HTML elements using the document.getElementById() method and adds event listeners to buttons using the addEventListener() method. When a button is clicked, the updateScene() function is called with a destination parameter based on the user's choice. The function retrieves a corresponding object from the scenes array based on the sceneName parameter, updates the HTML elements' content using the object's properties, sets the src attribute of the picture element based on the sceneName, removes the event listeners from the buttons, and adds new ones based on the updated choices array. The code loads the initial scene by calling updateScene() with the sceneName parameter of 'start.'
 
 
 --- 
@@ -228,9 +226,10 @@ For this game, I used Pixabay to discover an audio that is free of copyright. I 
 
 --- 
 
-## Desktop, Tablet & Mobile Preview
-This website was designed to be usable and readable on all screen sizes.
-![Responsive](assets/images/responsive.PNG)
+## Desktop, Tablet & Mobile Responsiveness 
+My website is designed to be responsive and accessible on any device, mainly thanks to its scrolling functionality.
+
+![Responsive](assets/images/responsive.svg)
 
 --- 
 
@@ -332,6 +331,8 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 
 ### **Javascript Validation using JSHint** 
 
+![screenshot of JSHint validation](assets/images/JS.PNG)
+
    
 ### **Bugs & Fixes**  
  1. To ensure that the video does not overlap with the navigation and footer elements, I styled in CSS to create separate containers for each of them and bring them forward in the layout and ensure it's responsive across all devices. 
@@ -344,7 +345,21 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
  
 1. Even though I was able to come up with an alternative solution for the video to fill the page, my initial intention was to have the video stretch across the page and expand, which would have eliminated the need for a scroll-down feature for the main body section.
 
-2. The scroll functionality for the body section is not visible on the mobile and tablet versions, and sometimes it may not be visible on the desktop version as well. This could potentially confuse the user, leading them to believe that the page is static and they cannot scroll through it.
+2. Although I found the strong scroll bar on the page disruptive to the design, I was unable to style it as I wanted. As a compromise, I decided to hide the scroll bar while keeping its functionality intact. However, this solution poses a potential problem as it may confuse users into thinking the page is static and that they cannot scroll through it.
+
+3. In Javascript, I wasn't able to add the picture value within the rest (title, context , choices and destination). I had to separate it or it would not work for me.
+
+4. The images takes longer time to load and if the  game is played quickly, it can freeze and crash. 
+
+### **Feedback from testers**  
+
+1. After sharing and testing the link with some friends, they pointed out some errors in the story's destination when clicked. As a result, I was able to correct the errors and update the story's text to make it more relevant.
+
+2. The website game may crash if played too quickly. However, since it is a narrative-based game, the user is compelled to take their time and cannot rush to click the next page, which helps to prevent crashes.
+
+3. 
+
+
 ---  
 
 ## Credits  

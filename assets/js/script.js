@@ -588,7 +588,7 @@ const scenes = {
     ]
   },
 
-}
+};
 
 // HTML elements 
 const picture = document.getElementById('picture');
@@ -709,5 +709,7 @@ function updateScene(sceneName) {
 updateScene('start');
 
 // Line break
-linebreak = document.createElement("br");
+const linebreak = document.createElement("br");
+const queryForm = document.getElementById("queryForm");
 queryForm.appendChild(linebreak);
+
