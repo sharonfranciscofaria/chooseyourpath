@@ -524,6 +524,101 @@ const scenes = {
     ]
   },
 
+  'friends': {
+    title: 'A new friend?',
+    context: 'People are not very friendly and seem to be entirely focused on their work. There is no chit-chat or idle talk, only the clicking of keyboards and the sound of people on phone calls. Despite the lack of interaction, you are amazed by the tech and come across a VR device.',
+    choices: [
+      {
+        text: 'Go grab it',
+        destination: 'explore'
+      },
+      {
+        text: 'Are we even allowed?',
+        destination: 'explore'
+      },
+      {
+        text: 'Lets do it!!',
+        destination: 'explore'
+      }
+    ]
+  },
+
+  'explore': {
+    title: 'Explore',
+    context: 'People are not very friendly and seem to be entirely focused on their work. There is no chit-chat or idle talk, only the clicking of keyboards and the sound of people on phone calls. Despite the lack of interaction, you are amazed by the tech and come across a VR device.',
+    choices: [
+      {
+        text: 'Go grab it',
+        destination: 'explore'
+      },
+      {
+        text: 'Are we even allowed?',
+        destination: 'explore'
+      },
+      {
+        text: 'Lets do it!!',
+        destination: 'explore'
+      }
+    ]
+  },
+
+  'lonely': {
+    title: 'One Month later',
+    context: 'After a month has gone by, Marshmallow has grown tired of this city. She longs for the company of her friends and the simple pleasures of life, such as breathing in fresh air, indulging in good quality food, taking trips to the beach, or strolling through the park and listening to the chirping of birds. These feelings of longing and isolation leave Marshmallow feeling downcast and depressed, prompting her to consider reaching out to Paddington for comfort. Do you think he will answer?',
+    choices: [
+      {
+        text: 'Why not?',
+        destination: 'coexisting2'
+      },
+      {
+        text: 'ofcourse!',
+        destination: 'coexisting2'
+      },
+      {
+        text: 'I wish he was here',
+        destination: 'coexisting2'
+      }
+    ]
+  },
+
+  'coexisting2': {
+    title: 'Reunited',
+    context: 'Paddington pays Marshmallow a visit and shares that he has been facing difficulties meeting his basic needs, such as food and shelter. Nonetheless, being in the city has provided him with easy access to safe food, financial resources, electricity, heating, and the ability to stay connected with friends and family worldwide. Through their respective experiences, both Paddington and Marshmallow have gained valuable insights about themselves and the world. Paddington has come to appreciate the importance of resourcefulness and adapting to change, whereas Marshmallow has learned to savour life simple pleasures and embrace a slower pace of living.',
+    choices: [
+      {
+        text: 'Stop Paddington from leaving?',
+        destination: 'final2'
+      },
+      {
+        text: 'Go with Paddington',
+        destination: 'final2'
+      },
+      {
+        text: 'Why cant we coexist?',
+        destination: 'final2'
+      }
+    ]
+  },
+
+  'final2': {
+    title: 'Reunited',
+    context: 'Congratulations! Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. Thank you for playing! Do not hesitate to restart the game to explore Paddingtons Path.',
+    choices: [
+      {
+        text: 'Restart',
+        destination: 'start'
+      },
+      {
+        text: 'Join Paddington',
+        destination: 'woods'
+      },
+      {
+        text: 'About',
+        destination: 'about'
+      }
+    ]
+  },
+
 }
   
   // Get the HTML elements
@@ -612,7 +707,19 @@ const scenes = {
       picture.src = './assets/images/train.svg';
     } else if (sceneName === 'work') {
       picture.src = './assets/images/work.svg';
+    } else if (sceneName === 'friends') {
+      picture.src = './assets/images/friends.svg';
+    } else if (sceneName === 'explore') {
+      picture.src = './assets/images/explore.svg';
+    } else if (sceneName === 'lonely') {
+      picture.src = './assets/images/lonely.svg';
+    } else if (sceneName === 'coexisting2') {
+      picture.src = './assets/images/coexisting2.svg';
+    } else if (sceneName === 'final2') {
+      picture.src = './assets/images/final2.svg';
     }
+
+
 
 
 

@@ -121,16 +121,17 @@ nav {
   }
   
   .story {
-    height: 520px;
+    height: 500px;
     overflow-y: scroll;
     margin: auto;
   }
   
   
+  
   .overlay {
     color: white;
     position: absolute;
-    width: 80%;
+    width: 60%;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
