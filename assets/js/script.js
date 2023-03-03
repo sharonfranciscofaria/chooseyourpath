@@ -556,7 +556,7 @@ const scenes = {
     title: 'A visit',
     context: 'Paddington pays Marshmallow a visit and shares that he has been facing difficulties meeting his basic needs, such as food and shelter. Nonetheless, being in the city has provided him with easy access to safe food, financial resources, electricity, heating, and the ability to stay connected with friends and family worldwide. Through their respective experiences, both Paddington and Marshmallow have gained valuable insights about themselves and the world. <br> Paddington has come to appreciate the importance of resourcefulness and adapting to change, whereas Marshmallow has learned to savour life simple pleasures and embrace a slower pace of living.',
     choices: [{
-        text: 'Stop Paddington from leaving?',
+        text: 'Stop Paddington from leaving',
         destination: 'final2'
       },
       {
@@ -571,8 +571,8 @@ const scenes = {
   },
 
   'final2': {
-    title: 'Congratulations!',
-    context: 'Congratulations! Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. <br> By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. Thank you for playing! Do not hesitate to restart the game to explore Paddingtons Path.',
+    title: 'Together',
+    context: 'Through guiding Paddington, you gained a deeper understanding of balancing technology and respect for the environment. <br>Although technology makes our lives easier, we must not forget that nature provides us with resources and beauty. <br> By respecting and protecting nature, we can ensure that future generations enjoy the same benefits. Thank you for playing! Do not hesitate to restart the game to explore Paddingtons Path.',
     choices: [{
         text: 'Restart',
         destination: 'start'

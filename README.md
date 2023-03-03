@@ -157,6 +157,7 @@ Through mind mapping, I was able to create a world-building framework for both p
 
 This code updates and manipulates the content of an HTML page based on user interaction. It gets references to various HTML elements using the document.getElementById() method and adds event listeners to buttons using the addEventListener() method. When a button is clicked, the updateScene() function is called with a destination parameter based on the user's choice. The function retrieves a corresponding object from the scenes array based on the sceneName parameter, updates the HTML elements' content using the object's properties, sets the src attribute of the picture element based on the sceneName, removes the event listeners from the buttons, and adds new ones based on the updated choices array. The code loads the initial scene by calling updateScene() with the sceneName parameter of 'start.'
 
+The game is designed to keep the user engaged by creating a loop that encourages them to explore different options and reconsider their choices. It does not have a definite endpoint, as users are prompted to try different paths or revisit previous scenes. This design fosters continuous interaction with the game and encourages users to explore all available options.
 
 --- 
 
@@ -367,6 +368,7 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 - [Code Institute](https://codeinstitute.net/ie/) 
 - [W3Schools](https://www.w3schools.com/) 
 - [StackOverflow](https://stackoverflow.com/)
+- [Web Dev Simplified: Build A Text Adventure Game With JavaScript](https://www.youtube.com/watch?v=R1S_NhKkvGA)
 - [The Wheelchair Guy : How to play Audio Files with JavaScript](https://www.youtube.com/watch?v=3xlws5og44U)
 - [Free Code: How To Add Full Screen Video In HTML, CSS](https://www.youtube.com/watch?v=4WMsIele2lI)
 - [Times of India](https://timesofindia.indiatimes.com/readersblog/taneesha-ahuja/impact-of-technology-on-environment-43973/)
