@@ -357,8 +357,9 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 
 2. The website game may crash if played too quickly. However, since it is a narrative-based game, the user is compelled to take their time and cannot rush to click the next page, which helps to prevent crashes.
 
-3. 
+3. Not being able to control the volume when played 
 
+4. The images do take time to load. 
 
 ---  
 

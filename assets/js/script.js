@@ -518,18 +518,18 @@ const scenes = {
 
   'explore': {
     title: 'Explore',
-    context: 'People are not very friendly and seem to be entirely focused on their work. There is no chit-chat or idle talk, only the clicking of keyboards and the sound of people on phone calls. Despite the lack of interaction, you are amazed by the tech and come across a VR device.',
+    context: 'You are amazed by the tech and the environment. You try the new VR device hoping to give a sense of nature in the virtual world. You spend hours wandering the city, but find nothing resembling nature. As the day wears on, you start to feel more and more frustrated and disconnected from the world around you.',
     choices: [{
         text: 'Go grab it',
-        destination: 'explore'
+        destination: 'lonely'
       },
       {
         text: 'Are we even allowed?',
-        destination: 'explore'
+        destination: 'lonely'
       },
       {
         text: 'Lets do it!!',
-        destination: 'explore'
+        destination: 'lonely'
       }
     ]
   },
